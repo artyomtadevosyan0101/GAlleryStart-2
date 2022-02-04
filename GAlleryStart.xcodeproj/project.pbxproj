@@ -91,12 +91,12 @@
 		00EBE14827887D520074DEAA /* LogOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutViewController.swift; sourceTree = "<group>"; };
 		00EBE14A278883440074DEAA /* FollowersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersTableViewCell.swift; sourceTree = "<group>"; };
 		00EBE14B278883440074DEAA /* FollowersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowersTableViewCell.xib; sourceTree = "<group>"; };
-		00EBE14E2788906D0074DEAA /* FollowsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowsTableViewCell.swift; sourceTree = "<group>"; };
-		00EBE14F2788906D0074DEAA /* FollowsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowsTableViewCell.xib; sourceTree = "<group>"; };
+		00EBE14E2788906D0074DEAA /* FollowsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FollowsTableViewCell.swift; path = "GAlleryStart/views/Follows View Cells/FollowsTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		00EBE14F2788906D0074DEAA /* FollowsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FollowsTableViewCell.xib; path = "GAlleryStart/views/Follows View Cells/FollowsTableViewCell.xib"; sourceTree = SOURCE_ROOT; };
 		00EBE152278891FF0074DEAA /* PeoplesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplesViewController.swift; sourceTree = "<group>"; };
 		00EBE1542788C0C40074DEAA /* MyPicturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPicturesViewController.swift; sourceTree = "<group>"; };
-		00EBE1562789C2100074DEAA /* GenresCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresCollectionViewCell.swift; sourceTree = "<group>"; };
-		00EBE1572789C2100074DEAA /* GenresCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenresCollectionViewCell.xib; sourceTree = "<group>"; };
+		00EBE1562789C2100074DEAA /* GenresCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GenresCollectionViewCell.swift; path = "GAlleryStart/views/Follows View Cells/GenresCollectionViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		00EBE1572789C2100074DEAA /* GenresCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GenresCollectionViewCell.xib; path = "GAlleryStart/views/Follows View Cells/GenresCollectionViewCell.xib"; sourceTree = SOURCE_ROOT; };
 		00EBE15A2789C3DA0074DEAA /* GenresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresViewController.swift; sourceTree = "<group>"; };
 		00EBE15C2789C7180074DEAA /* PictureInGenresCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureInGenresCollectionViewCell.swift; sourceTree = "<group>"; };
 		00EBE15D2789C7180074DEAA /* PictureInGenresCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PictureInGenresCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -116,6 +116,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		004CC01627AD177F001F1908 /* Follows View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				00EBE1562789C2100074DEAA /* GenresCollectionViewCell.swift */,
+				00EBE1572789C2100074DEAA /* GenresCollectionViewCell.xib */,
+				00EBE14E2788906D0074DEAA /* FollowsTableViewCell.swift */,
+				00EBE14F2788906D0074DEAA /* FollowsTableViewCell.xib */,
+			);
+			path = "Follows View Cells";
+			sourceTree = "<group>";
+		};
 		0064B86A27916EAE00899533 /* Launch */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,10 +172,7 @@
 				00EBE1612789CE160074DEAA /* MyPicturesCollectionViewCell.xib */,
 				00EBE15C2789C7180074DEAA /* PictureInGenresCollectionViewCell.swift */,
 				00EBE15D2789C7180074DEAA /* PictureInGenresCollectionViewCell.xib */,
-				00EBE1562789C2100074DEAA /* GenresCollectionViewCell.swift */,
-				00EBE1572789C2100074DEAA /* GenresCollectionViewCell.xib */,
-				00EBE14E2788906D0074DEAA /* FollowsTableViewCell.swift */,
-				00EBE14F2788906D0074DEAA /* FollowsTableViewCell.xib */,
+				004CC01627AD177F001F1908 /* Follows View Cells */,
 				00EBE14A278883440074DEAA /* FollowersTableViewCell.swift */,
 				00EBE14B278883440074DEAA /* FollowersTableViewCell.xib */,
 				006CA1CF2785B821004B0A4D /* CheckBox.swift */,

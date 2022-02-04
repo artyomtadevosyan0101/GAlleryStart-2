@@ -143,28 +143,8 @@ class HomeViewController: UIViewController {
     
 }
 
-extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, MenuViewControllerDelegate {
-    func hideMenu() {
-        UIView.animate(withDuration: 0.1) {
-            self.leadingConstraintForMenuView.constant = 10
-            self.view.layoutIfNeeded()
-        } completion: { (status) in
-            self.backViewForMenu.alpha = 0.0
-            UIView.animate(withDuration: 0.1) {
-                self.leadingConstraintForMenuView.constant = -280
-                self.view.layoutIfNeeded()
-            } completion: { (status) in
-                self.backViewForMenu.isHidden = true
-                self.isMenuShown = false
-            }
-        }
-        // hideMenuView()
-    }
-    
-    private func hideMenuView()
-    {
-        
-    }
+extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource{
+   
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return pictures.count
@@ -202,5 +182,27 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
 }
 
-
+extension HomeViewController: MenuViewControllerDelegate {
+    func hideMenu() {
+        UIView.animate(withDuration: 0.1) {
+            self.leadingConstraintForMenuView.constant = 10
+            self.view.layoutIfNeeded()
+        } completion: { (status) in
+            self.backViewForMenu.alpha = 0.0
+            UIView.animate(withDuration: 0.1) {
+                self.leadingConstraintForMenuView.constant = -280
+                self.view.layoutIfNeeded()
+            } completion: { (status) in
+                self.backViewForMenu.isHidden = true
+                self.isMenuShown = false
+            }
+        }
+        // hideMenuView()
+    }
+    
+    private func hideMenuView()
+    {
+        
+    }
+}
 

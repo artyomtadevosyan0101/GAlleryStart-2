@@ -9,7 +9,7 @@ import UIKit
 
 class LogInViewController: UIViewController {
      
-    
+    //
      @IBOutlet weak var error: UILabel!
      
     @IBOutlet weak var email: UITextField!

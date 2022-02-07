@@ -28,6 +28,7 @@ class LogInViewController: UIViewController {
          getCornerRadius()
          error.isHidden = true
          edit()
+         localizeWords()
          
     }
 

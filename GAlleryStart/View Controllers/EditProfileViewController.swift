@@ -6,24 +6,33 @@
 //
 
 import UIKit
+import Localize_Swift
 
 class EditProfileViewController: UIViewController {
     
     var isTrue: Bool = true
     var imagePicker = UIImagePickerController()
     
+    @IBOutlet weak var editTitleLabel: UILabel!
     @IBOutlet weak var background: UIImageView!
     @IBOutlet weak var changeBackground: UIButton!
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var changeProfileImage: UIButton!
+    @IBOutlet weak var firstNameLabel: UILabel!
     @IBOutlet weak var firstName: UITextField!
+    @IBOutlet weak var lastNameLabel: UILabel!
     @IBOutlet weak var lastName: UITextField!
     @IBOutlet weak var idUsername: UITextField!
     @IBOutlet weak var stackview: UIStackView!
+    @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var phoneNumberLabel: UILabel!
     @IBOutlet weak var phoneNumber: UITextField!
+    @IBOutlet weak var genderLabel: UILabel!
     @IBOutlet weak var male: UIButton!
     @IBOutlet weak var female: UIButton!
+    @IBOutlet weak var dateOfBirthLabel: UILabel!
+    @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var changePassword: UIButton!
     @IBOutlet weak var saveChanges: UIButton!
     @IBOutlet weak var changeProfile: UIView!
@@ -36,6 +45,7 @@ class EditProfileViewController: UIViewController {
         changeProfile.alpha = 0
 
         getCornerRadius()
+        localizeWords()
         
         
     }
@@ -43,6 +53,24 @@ class EditProfileViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.stackview.endEditing(true)
         self.view.endEditing(true)
+    }
+    
+    func localizeWords() {
+        editTitleLabel.text = "Edit".localized()
+        firstNameLabel.text = "First name".localized()
+        firstName.placeholder = "First name".localized()
+        lastNameLabel.text = "Last name".localized()
+        lastName.placeholder = "Last name".localized()
+        email.placeholder = "E-mail".localized()
+        emailLabel.text = "E-mail".localized()
+        phoneNumber.placeholder = "Phone number".localized()
+        phoneNumberLabel.text = "Phone number".localized()
+        genderLabel.text = "Gender".localized()
+        male.setTitle("Male".localized(), for: .normal)
+        female.setTitle("Female".localized(), for: .normal)
+        dateOfBirthLabel.text = "Date of birth".localized()
+        changePassword.setTitle("Change password".localized(), for: .normal)
+        saveChanges.setTitle("Save changes".localized(), for: .normal)
     }
     
     func getCornerRadius() {

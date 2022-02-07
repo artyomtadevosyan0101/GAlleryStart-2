@@ -6,9 +6,11 @@
 //
 
 import UIKit
+import Localize_Swift
 
 class FollowersViewController: UIViewController {
 
+    @IBOutlet weak var followersTitleLabel: UILabel!
     
     @IBOutlet weak var followersTableView: UITableView!
     
@@ -17,6 +19,11 @@ class FollowersViewController: UIViewController {
         super.viewDidLoad()
         
         getConfigurations()
+        localizeWords()
+    }
+    
+    func localizeWords() {
+        followersTitleLabel.text = "Followers".localized()
     }
     
     func getConfigurations() {

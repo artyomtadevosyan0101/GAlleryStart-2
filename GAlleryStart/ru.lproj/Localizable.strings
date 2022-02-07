@@ -65,3 +65,23 @@
 "Forgot Password?" = "Забыли пароль?";
 "Please, enter your email address. You will receive a link to create a new password via email." = "Пожалуйста, введите свой адрес электронной почты. Вы получите ссылку для создания нового пароля по электронной почте.";
 "Send" = "Отправлять";
+
+// edite profile vc
+
+"Edit" = "Редактировать";
+"Change password" = "Изменить пароль";
+"Save changes" = "Сохранить изменения";
+
+
+//follows vc
+"People" = "Люди";
+"Genres" = "Жанры";
+
+//change password vc
+"Old password" = "Прежний пароль";
+"New password" = "Новый пароль";
+
+//create new password
+
+"Create New Password" = "Создать новый пароль";
+"Save" = "Сохранять";

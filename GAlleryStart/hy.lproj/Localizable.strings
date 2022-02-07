@@ -5,3 +5,83 @@
   Created by Armine on 1/13/22.
   
 */
+
+//home vc
+"Search" = "Որոնել";
+
+//log in VC
+"Password" = "Գաղտնաբառ";
+"E-mail" = "էլ. հասցե";
+"Log in" = "Մուտք գործել";
+"Sign up" = "Գրանցվել";
+"Forgot password?" = "Մոռացել եք գաղտնաբառը?";
+
+// sign up VC
+
+"First name" = "Անուն";
+"Last name" = "Ազգանուն";
+"Phone number" = "Հեռախոսահամար";
+"Gender" = "Սեռ";
+"Male" = "Արական";
+"Female" = "Իգական";
+"Date of birth" = "Ծննդյան ամսաթիվ";
+"Confirm password" = "Հաստատել գաղտնաբառը";
+"Agree to terms and conditions" = "Համաձայն եմ պայմանների հետ";
+"Already  have an account?" =  "Արդեն ունեք հաշիվ?";
+"Log in here" = "Մուտք գործել այստեղ";
+
+//my account vc
+"My account" = "Իմ հաշիվը" ;
+"Follows" = "Բաժանորդագրություններ" ;
+"Followers" = "Բաժանորդներ" ;
+"My pictures" = "Իմ նկարները";
+"Photo source" = "Լուսանկարի աղբյուր";
+"Choose a source" = "Ընտրեք աղբյուրը";
+"Camera" = "Տեսախցիկ";
+"Photo Library" = "ֆոտոգրադարան";
+"Cancel" = "Չեղարկել";
+
+//log out VC
+"Log out" = "Դուրս գալ";
+
+//menu VC
+"All" = "Ամեն ինչ";
+"Fashion" = "Նորաձևություն";
+"Street Photography" = "Փողոցային լուսանկարչություն";
+"Landscape" = "Բնանկար";
+"Portaiture" = "Դիմանկար";
+"Other" = "Ուրիշ";
+"   Languages" = "   Լեզուներ";
+"   Settings" = "   Կարգավորումներ";
+"   Help" = "   Օգնություն";
+
+//notifications VC
+
+"Notifications" = "Ծանուցումներ" ;
+"Show notifications" = "Ցույց տալ ծանուցումները" ;
+
+//forgot password vc
+"Forgot Password" = "Մոռացել եք գաղտնաբառը";
+"Forgot Password?" = "Մոռացել եք գաղտնաբառը?";
+"Please, enter your email address. You will receive a link to create a new password via email." = "Խնդրում ենք մուտքագրել ձեր էլ.փոստի հասցեն: Դուք էլփոստով կստանաք նոր գաղտնաբառ ստեղծելու հղում:";
+"Send" = "Ուղարկել";
+
+// edite profile vc
+
+"Edit" = "Խմբագրել";
+"Change password" = "Փոխել գաղտնաբառը";
+"Save changes" = "Պահպանել փոփոխությունները";
+
+
+//follows vc
+"People" = "Մարդիկ";
+"Genres" = "Ժանրեր";
+
+//change password vc
+"Old password" = "Նախկին գաղտնաբառը";
+"New password" = "Նոր գաղտնաբառը";
+
+//create new password
+
+"Create New Password" = "Ստեղծել նոր գաղտնաբառ";
+"Save" = "Պահպանել";

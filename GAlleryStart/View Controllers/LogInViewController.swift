@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Localize_Swift
 
 class LogInViewController: UIViewController {
      
@@ -17,7 +17,8 @@ class LogInViewController: UIViewController {
     
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var logIn: UIButton!
-    @IBOutlet weak var signUp: UIButton!
+     @IBOutlet weak var login: UILabel!
+     @IBOutlet weak var signUp: UIButton!
      
      var emailPravda = false
      var passwordPravda = false
@@ -39,6 +40,13 @@ class LogInViewController: UIViewController {
           dismiss(animated: true, completion:  nil)
      }
      
+     func localizeWords() {
+          error.text = "ERROR !".localized()
+          email.placeholder = "E-mail".localized()
+          password.placeholder = "Password".localized()
+          login.text = "Log in".localized()
+          signUp.titleLabel?.text = "Sign up".localized()
+     }
      
      func getCornerRadius() {
           let txtFields: [UITextField] = [email, password]

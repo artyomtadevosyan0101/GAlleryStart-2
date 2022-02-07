@@ -7,4 +7,11 @@ target 'GAlleryStart' do
 
   # Pods for GAlleryStart
 
+	pod 'Firebase/Analytics'
+	pod 'Firebase/Auth'	
+	pod 'Firebase/Core'
+	pod 'Firebase/Firestore'
+
+  	pod 'Localize-Swift'
+
 end

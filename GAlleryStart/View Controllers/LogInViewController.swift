@@ -9,16 +9,15 @@ import UIKit
 import Localize_Swift
 
 class LogInViewController: UIViewController {
-     
-    //
+      
+     @IBOutlet weak var logInLabel: UILabel!
      @IBOutlet weak var error: UILabel!
-     
     @IBOutlet weak var email: UITextField!
-    
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var logIn: UIButton!
      @IBOutlet weak var login: UILabel!
      @IBOutlet weak var signUp: UIButton!
+     @IBOutlet weak var forgotPasswordButton: UIButton!
      
      var emailPravda = false
      var passwordPravda = false
@@ -42,11 +41,15 @@ class LogInViewController: UIViewController {
      }
      
      func localizeWords() {
+          logInLabel.text = "Log in".localized()
           error.text = "ERROR !".localized()
           email.placeholder = "E-mail".localized()
           password.placeholder = "Password".localized()
           login.text = "Log in".localized()
-          signUp.titleLabel?.text = "Sign up".localized()
+          signUp.setTitle("Sign up".localized(), for: .normal)
+          //signUp.titleLabel?.text = "Sign up".localized()
+          //forgotPasswordButton.titleLabel?.text = "Forgot password?".localized()
+          forgotPasswordButton.setTitle("Forgot password?".localized(), for: .normal)
      }
      
      func getCornerRadius() {

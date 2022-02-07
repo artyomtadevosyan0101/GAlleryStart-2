@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Localize_Swift
 
 class MyAccountViewController: UIViewController{
     
@@ -16,6 +16,8 @@ class MyAccountViewController: UIViewController{
     private var isMenuShown: Bool = false
     private var beginPoint: CGFloat = 0.0
     private var difference: CGFloat = 0.0
+    
+    @IBOutlet weak var myAccountTitleLabel: UILabel!
     
     @IBOutlet weak var background: UIImageView!
     @IBOutlet weak var profilePicture: UIImageView!
@@ -52,7 +54,7 @@ class MyAccountViewController: UIViewController{
         logOut.alpha = 1
        // backViewForAdd.alpha = 0
         getCornerRadius()
-        
+       localizeWords()
         
     }
         
@@ -123,6 +125,15 @@ class MyAccountViewController: UIViewController{
                 }
             }
         }
+    }
+    
+    func localizeWords() {
+        myAccountTitleLabel.text = "My account".localized()
+        follows.setTitle("Follows".localized(), for: .normal)
+        followers.setTitle("Followers".localized(), for: .normal)
+        myPicturesLabel.text = "My pictures".localized()
+        //follows.titleLabel?.text = "Follows".localized()
+        //followers.titleLabel?.text = "Followers".localized()
     }
     
     func getCornerRadius() {
@@ -198,15 +209,15 @@ class MyAccountViewController: UIViewController{
 //        }
         let imagePickerController = UIImagePickerController()
                imagePickerController.delegate = self
-               let actionSheet = UIAlertController(title: "Photo source", message: "Choose a source", preferredStyle: .actionSheet)
-               actionSheet.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (action:UIAlertAction) in
+        let actionSheet = UIAlertController(title: "Photo source".localized(), message: "Choose a source".localized(), preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "Camera".localized(), style: .default, handler: { (action:UIAlertAction) in
                    imagePickerController.sourceType = .camera
                }))
-               actionSheet.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: { (action:UIAlertAction) in
+        actionSheet.addAction(UIAlertAction(title: "Photo Library".localized(), style: .default, handler: { (action:UIAlertAction) in
                    imagePickerController.sourceType = .photoLibrary
                    self.present(imagePickerController, animated: true, completion: nil)
                }))
-               actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        actionSheet.addAction(UIAlertAction(title: "Cancel".localized(), style: .cancel, handler: nil))
                self.present(actionSheet, animated: true, completion: nil)
         
     }

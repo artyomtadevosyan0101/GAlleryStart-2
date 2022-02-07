@@ -6,9 +6,11 @@
 //
 
 import UIKit
+import Localize_Swift
 
 class SignUpViewController: UIViewController {
     
+    @IBOutlet weak var signUpTitleLabel: UILabel!
     
     @IBOutlet weak var signUpScrollView: UIScrollView!
     @IBOutlet weak var logo: UIImageView!
@@ -25,8 +27,11 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var confirmPassword: UITextField!
     @IBOutlet weak var selectAgreement: UIButton!
+    @IBOutlet weak var agreementlabel: UILabel!
     @IBOutlet weak var signUpButton: UIButton!
     
+    @IBOutlet weak var logInHereButton: UIButton!
+    @IBOutlet weak var haveAccountLabel: UILabel!
     
     var emailPravda = false
     var passwordPravda = false
@@ -36,6 +41,7 @@ class SignUpViewController: UIViewController {
         
         super.viewDidLoad()
         getCornerRadius()
+        localizeWords()
 
     }
     
@@ -51,7 +57,24 @@ class SignUpViewController: UIViewController {
         
     }
 
-  
+    func localizeWords() {
+        signUpTitleLabel.text = "Sign up".localized()
+        signUpLabel.text = "Sign up".localized()
+        firstName.placeholder = "First name".localized()
+        lastName.placeholder = "Last name".localized()
+        email.placeholder = "E-mail".localized()
+        phoneNumber.placeholder = "Phone number".localized()
+        genderLabel.text = "Gender".localized()
+        maleButton.setTitle("Male".localized(), for: .normal)
+        femaleButton.setTitle("Female".localized(), for: .normal)
+        dateOfBirthLabel.text = "Date of birth".localized()
+        password.placeholder = "Password".localized()
+        confirmPassword.placeholder = "Confirm password".localized()
+        agreementlabel.text = "Agree to terms and conditions".localized()
+        signUpButton.setTitle("Sign up".localized(), for: .normal)
+        haveAccountLabel.text = "Already  have an account?".localized()
+        logInHereButton.titleLabel?.text = "Log in here".localized()
+    }
     
     @IBAction func male(_ sender: UIButton) {
         maleButton.backgroundColor = UIColor(named: "darkPink")
@@ -149,17 +172,17 @@ class SignUpViewController: UIViewController {
        //  error.isHidden = false
     }
 }
-}
+
        // Utils.toMyAccountVC(target: self)
 
     
 
-    //@IBAction func logIn(_ sender: UIButton) {
-      //  Utils.toLogInVC(target: self)
-  //  }
+    @IBAction func logIn(_ sender: UIButton) {
+        Utils.toLogInVC(target: self)
+    }
     
-  //  @IBAction func dismiss(_ sender: UIButton) {
-      //  dismiss(animated: true, completion: nil)
-  //  }
-    
+    @IBAction func dismiss(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+}
 //}

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Localize_Swift
 
 protocol MenuViewControllerDelegate {
     func hideMenu()
@@ -32,8 +33,22 @@ class MenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         languagesView.alpha = 0
+        localizeWords()
         
     }
+    
+    func localizeWords() {
+        all.setTitle("All".localized(), for: .normal)
+        fashion.setTitle("Fashion".localized(), for: .normal)
+        streetPhotography.setTitle("Street Photography".localized(), for: .normal)
+        landscape.setTitle("Landscape".localized(), for: .normal)
+        portraiture.setTitle("Portaiture".localized(), for: .normal)
+        other.setTitle("Other".localized(), for: .normal)
+        languages.setTitle("   Languages".localized(), for: .normal)
+        settings.setTitle("   Settings".localized(), for: .normal)
+        help.setTitle("   Help".localized(), for: .normal)
+    }
+    
     @IBAction func onClickDismissMenu(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }

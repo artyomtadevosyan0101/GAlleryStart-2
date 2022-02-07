@@ -5,7 +5,7 @@
 //  Created by Armine on 12/8/21.
 //
 import UIKit
-
+import Localize_Swift
 
 
 class HomeViewController: UIViewController {
@@ -42,9 +42,14 @@ class HomeViewController: UIViewController {
         
         backViewForMenu.isHidden = true
         
+        localizeWords()
        
         
         
+    }
+    
+    func localizeWords() {
+        search.placeholder = "Search".localized()
     }
     
     func getCornerRadius() {

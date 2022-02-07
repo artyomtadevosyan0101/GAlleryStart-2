@@ -6,14 +6,19 @@
 //
 
 import UIKit
+import Localize_Swift
 
 class LogOutViewController: UIViewController {
 
     @IBOutlet weak var logOutButton: UIButton!
+    @IBOutlet weak var logOutLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        localizeWords()
+    }
+    
+    func localizeWords() {
+        logOutLabel.text = "Log out".localized()
     }
     
     @IBAction func logOut(_ sender: UIButton) {

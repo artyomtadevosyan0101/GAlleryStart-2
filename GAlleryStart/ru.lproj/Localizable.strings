@@ -6,9 +6,62 @@
   
 */
 
+//home vc
+"Search" = "Поиск";
+
+//log in VC
 "Password" = "Пароль";
 "E-mail" = "Адрес эл. почты";
 "Log in" = "Войти";
 "Sign up" = "Зарегистрироваться";
+"Forgot password?" = "Забыли пароль?";
 
+// sign up VC
 
+"First name" = "Имя";
+"Last name" = "Фамилия";
+"Phone number" = "Телефонный номер";
+"Gender" = "Пол";
+"Male" = "Мужской";
+"Female" = "Женский";
+"Date of birth" = "Дата рождения";
+"Confirm password" = "Подтвердите пароль";
+"Agree to terms and conditions" = "Согласен с условиями";
+"Already  have an account?" =  "Уже есть аккаунт?";
+"Log in here" = "Войти здесь";
+
+//my account vc
+"My account" = "Мой аккаунт" ;
+"Follows" = "Подписки" ;
+"Followers" = "Подписчики" ;
+"My pictures" = "Мои картинки";
+"Photo source" = "Источник фото";
+"Choose a source" = "Выберите источник";
+"Camera" = "Камера";
+"Photo Library" = "Фотобиблиотека";
+"Cancel" = "Отмена";
+
+//log out VC
+"Log out" = "Выйти";
+
+//menu VC
+"All" = "Все";
+"Fashion" = "Мода";
+"Street Photography" = "Уличная фотография";
+"Landscape" = "Пейзаж";
+"Portaiture" = "Портрет";
+"Other" = "Другой";
+"   Languages" = "   Языки";
+"   Settings" = "   Настройки";
+"   Help" = "   Помощь";
+
+//notifications VC
+
+"Notifications" = "Уведомления" ;
+"Show notifications" = "Показать уведомления" ;
+
+//forgot password vc
+"Forgot Password" = "Забыли пароль";
+"Forgot Password?" = "Забыли пароль?";
+"Please, enter your email address. You will receive a link to create a new password via email." = "Пожалуйста, введите свой адрес электронной почты. Вы получите ссылку для создания нового пароля по электронной почте.";
+"Send" = "Отправлять";

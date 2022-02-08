@@ -27,12 +27,16 @@ class LanguagesViewController: UIViewController {
               Localize.setCurrentLanguage("hy")
             default:
               print("Error")
+            
             }
-            //let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//            let vc = storyboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
-//            vc.modalTransitionStyle = .flipHorizontal
-//            vc.modalPresentationStyle = .overFullScreen
-//            self.present(vc, animated: true, completion: nil)
+        
+     //   let vc = storyboard?.instantiateViewController(withIdentifier: "MyAccountViewController") as! MyAccountViewController
+        
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+           let vc = storyboard.instantiateViewController(withIdentifier: "MyAccountViewController") as! MyAccountViewController
+            vc.modalTransitionStyle = .flipHorizontal
+            vc.modalPresentationStyle = .overFullScreen
+            self.present(vc, animated: true, completion: nil)
     }
 }
 

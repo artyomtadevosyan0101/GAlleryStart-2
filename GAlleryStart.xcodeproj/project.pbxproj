@@ -107,8 +107,8 @@
 		00EBE1612789CE160074DEAA /* MyPicturesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPicturesCollectionViewCell.xib; sourceTree = "<group>"; };
 		00EBE18C278C55260074DEAA /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		217786A31D58E22D6BE254D9 /* Pods_GAlleryStart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GAlleryStart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		47B6FD64E3D7A7DC68134360 /* Pods-GAlleryStart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAlleryStart.release.xcconfig"; path = "Target Support Files/Pods-GAlleryStart/Pods-GAlleryStart.release.xcconfig"; sourceTree = "<group>"; };
-		FEC5F2035B4BBDAA60137853 /* Pods-GAlleryStart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAlleryStart.debug.xcconfig"; path = "Target Support Files/Pods-GAlleryStart/Pods-GAlleryStart.debug.xcconfig"; sourceTree = "<group>"; };
+		AD6D24D2B18C5433FFEFB5E4 /* Pods-GAlleryStart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAlleryStart.release.xcconfig"; path = "Target Support Files/Pods-GAlleryStart/Pods-GAlleryStart.release.xcconfig"; sourceTree = "<group>"; };
+		BCE4D7667071134DA4AA7583 /* Pods-GAlleryStart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAlleryStart.debug.xcconfig"; path = "Target Support Files/Pods-GAlleryStart/Pods-GAlleryStart.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,8 +243,8 @@
 		A06BC2E25A9DDE0EC059421A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FEC5F2035B4BBDAA60137853 /* Pods-GAlleryStart.debug.xcconfig */,
-				47B6FD64E3D7A7DC68134360 /* Pods-GAlleryStart.release.xcconfig */,
+				BCE4D7667071134DA4AA7583 /* Pods-GAlleryStart.debug.xcconfig */,
+				AD6D24D2B18C5433FFEFB5E4 /* Pods-GAlleryStart.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -566,7 +566,7 @@
 		};
 		008E29422760F476005A55D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEC5F2035B4BBDAA60137853 /* Pods-GAlleryStart.debug.xcconfig */;
+			baseConfigurationReference = BCE4D7667071134DA4AA7583 /* Pods-GAlleryStart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -597,7 +597,7 @@
 		};
 		008E29432760F476005A55D7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47B6FD64E3D7A7DC68134360 /* Pods-GAlleryStart.release.xcconfig */;
+			baseConfigurationReference = AD6D24D2B18C5433FFEFB5E4 /* Pods-GAlleryStart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

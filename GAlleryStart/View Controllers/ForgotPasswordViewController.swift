@@ -45,13 +45,10 @@ class ForgotPasswordViewController: UIViewController {
     @IBAction func sendButton(_ sender: UIButton) {
         if email.text!.count <= 5 {
              
-            
              email.layer.borderWidth = 2
              email.layer.borderColor  = .init(red: 255, green: 0, blue: 0, alpha: 1)
              
-             
-             
-        }else{
+        } else {
         Utils.toCreateNewPasswordVC(target: self)
         }
    }

@@ -10,7 +10,6 @@ import UIKit
 class MyPicturesViewController: UIViewController {
 
     var myPictures = ["piture1", "piture2", "piture3"]
-    //var myPictures = ["", "", ""]
     let conteins : CGFloat = 12
     
     @IBOutlet weak var myPicturesCollectionView: UICollectionView!

@@ -85,3 +85,7 @@
 
 "Create New Password" = "Создать новый пароль";
 "Save" = "Сохранять";
+
+//follow unfollow
+"Follow" = "Следить";
+"Unfollow" = "Отписаться";

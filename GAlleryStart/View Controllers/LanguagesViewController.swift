@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Localize_Swift
 
 class LanguagesViewController: UIViewController {
 
@@ -15,15 +16,62 @@ class LanguagesViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func language(_ sender: UIButton) {
+        let index = sender.tag
+            switch index {
+            case 1:
+              Localize.setCurrentLanguage("en")
+            case 2:
+              Localize.setCurrentLanguage("ru")
+            case 3:
+              Localize.setCurrentLanguage("hy")
+            default:
+              print("Error")
+            }
+            //let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            let vc = storyboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+//            vc.modalTransitionStyle = .flipHorizontal
+//            vc.modalPresentationStyle = .overFullScreen
+//            self.present(vc, animated: true, completion: nil)
     }
-    */
-
 }
+
+
+//import UIKit
+//import Localize_Swift
+//
+//class LanguagesViewController: UIViewController {
+//
+//    @IBOutlet weak var englishButton: UIButton!
+//    @IBOutlet weak var russianButton: UIButton!
+//    @IBOutlet weak var armenianButton: UIButton!
+//    //var setCurrentLanguage = ""
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//
+//
+//    }
+//
+//    @IBAction func lang(_ sender: UIButton) {
+//        let index = sender.tag
+//            switch index {
+//            case 1:
+//              Localize.setCurrentLanguage("en")
+//            case 2:
+//              Localize.setCurrentLanguage("ru")
+//            case 3:
+//              Localize.setCurrentLanguage("hy")
+//            default:
+//              print("Error")
+//            }
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            let vc = storyboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+//            vc.modalTransitionStyle = .flipHorizontal
+//            vc.modalPresentationStyle = .overFullScreen
+//            self.present(vc, animated: true, completion: nil)
+//    }
+//
+//
+//
+//
+//}

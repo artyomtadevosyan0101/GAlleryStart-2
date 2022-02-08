@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Localize_Swift
 
 class FollowsTableViewCell: UITableViewCell {
 
@@ -27,12 +28,12 @@ class FollowsTableViewCell: UITableViewCell {
         if isFollowing == false {
             followUnfollowButton.backgroundColor = UIColor(named: "darkPink")
             //followButton.titleLabel?.text = "Follow"
-            followUnfollowButton.setTitle("Unfollow", for: .normal)
+            followUnfollowButton.setTitle("Unfollow".localized(), for: .normal)
             isFollowing = !isFollowing
         } else {
             followUnfollowButton.backgroundColor = .white
             //followButton.titleLabel?.text = "Unfollow"
-            followUnfollowButton.setTitle("Follow", for: .normal)
+            followUnfollowButton.setTitle("Follow".localized(), for: .normal)
             isFollowing = !isFollowing
         }
     }

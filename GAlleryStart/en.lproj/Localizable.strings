@@ -6,3 +6,86 @@
   
 */
 
+//home vc
+"Search" = "Search";
+
+//log in VC
+"Password" = "Password";
+"E-mail" = "E-mail";
+"Log in" = "Log in";
+"Sign up" = "Sign up";
+"Forgot password?" = "Forgot password?";
+
+// sign up VC
+
+"First name" = "First name";
+"Last name" = "Last name";
+"Phone number" = "Phone number";
+"Gender" = "Gender";
+"Male" = "Male";
+"Female" = "Female";
+"Date of birth" = "Date of birth ";
+"Confirm password" = "Confirm password";
+"Agree to terms and conditions" = "Agree to terms and conditions";
+"Already  have an account?" =  "Already  have an account?";
+"Log in here" = "Log in here";
+
+//my account vc
+"My account" = "My account" ;
+"Follows" = "Follows" ;
+"Followers" = "Followers" ;
+"My pictures" = "My pictures";
+"Photo source" = "Photo source";
+"Choose a source" = "Choose a source";
+"Camera" = "Camera";
+"Photo Library" = "Photo Library";
+"Cancel" = "Cancel";
+
+//log out VC
+"Log out" = "Log out";
+
+//menu VC
+"All" = "All";
+"Fashion" = "Fashion";
+"Street Photography" = "Street Photography";
+"Landscape" = "Landscape";
+"Portaiture" = "Portaiture";
+"Other" = "Other";
+"   Languages" = "   Languages";
+"   Settings" = "   Settings";
+"   Help" = "   Help";
+
+//notifications VC
+
+"Notifications" = "Notifications" ;
+"Show notifications" = "Show notifications" ;
+
+//forgot password vc
+"Forgot Password" = "Forgot Password";
+"Forgot Password?" = "Forgot Password?";
+"Please, enter your email address. You will receive a link to create a new password via email." = "Please, enter your email address. You will receive a link to create a new password via email.";
+"Send" = "Send";
+
+// edite profile vc
+
+"Edit" = "Edit";
+"Change password" = "Change password";
+"Save changes" = "Save changes";
+
+
+//follows vc
+"People" = "People";
+"Genres" = "Genres";
+
+//change password vc
+"Old password" = "Old password";
+"New password" = "New password";
+
+//create new password
+
+"Create New Password" = "Create New Password";
+"Save" = "Save";
+
+//follow unfollow
+"Follow" = "Follow";
+"Unfollow" = "Unfollow";

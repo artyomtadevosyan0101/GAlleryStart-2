@@ -85,3 +85,7 @@
 
 "Create New Password" = "Ստեղծել նոր գաղտնաբառ";
 "Save" = "Պահպանել";
+
+//follow unfollow
+"Follow" = "Հետևել";
+"Unfollow" = "Չհետևել";

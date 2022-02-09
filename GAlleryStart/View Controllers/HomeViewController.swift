@@ -43,7 +43,7 @@ class HomeViewController: UIViewController {
         backViewForMenu.isHidden = true
         
         localizeWords()
-       
+        
         
         
     }
@@ -54,7 +54,7 @@ class HomeViewController: UIViewController {
     
     func getCornerRadius() {
         Utils.getCornerRadiusToTextFields(instance: search, radius: Utils.radius25)
-
+        
     }
     
     

@@ -68,6 +68,7 @@ class Utils {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let homeVC = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
         homeVC.modalPresentationStyle = .fullScreen
+        homeVC.modalTransitionStyle = .crossDissolve
         target.present(homeVC, animated: true, completion: nil)
     }
     
@@ -76,6 +77,7 @@ class Utils {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let followsVC = storyboard.instantiateViewController(withIdentifier: "FollowsViewController") as! FollowsViewController
         followsVC.modalPresentationStyle = .fullScreen
+        followsVC.modalTransitionStyle = .crossDissolve
         target.present(followsVC, animated: true, completion: nil)
     }
     
@@ -83,6 +85,7 @@ class Utils {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let followersVC = storyboard.instantiateViewController(withIdentifier: "FollowersViewController") as! FollowersViewController
         followersVC.modalPresentationStyle = .fullScreen
+        followersVC.modalTransitionStyle = .crossDissolve
         target.present(followersVC, animated: true, completion: nil)
     }
     
@@ -90,6 +93,7 @@ class Utils {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let picturesVC = storyboard.instantiateViewController(withIdentifier: "MyPicturesViewController") as! MyPicturesViewController
         picturesVC.modalPresentationStyle = .fullScreen
+        picturesVC.modalTransitionStyle = .crossDissolve
         target.present(picturesVC, animated: true, completion: nil)
     }
     
@@ -97,6 +101,7 @@ class Utils {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let createVC = storyboard.instantiateViewController(withIdentifier: "CreateNewPasswordViewController") as! CreateNewPasswordViewController
         createVC.modalPresentationStyle = .fullScreen
+        createVC.modalTransitionStyle = .crossDissolve
         target.present(createVC, animated: true, completion: nil)
     }
     
@@ -104,6 +109,8 @@ class Utils {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let openPictureVC = storyboard.instantiateViewController(withIdentifier: "OpenPictureViewController") as! CreateNewPasswordViewController
         openPictureVC.modalPresentationStyle = .fullScreen
+        openPictureVC.modalTransitionStyle = .crossDissolve
+
         target.present(openPictureVC, animated: true, completion: nil)
     }
     
@@ -111,6 +118,8 @@ class Utils {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let tabBarVC = storyboard.instantiateViewController(withIdentifier: "MainTabBarViewController") as! MainTabBarViewController
         tabBarVC.modalPresentationStyle = .fullScreen
+        tabBarVC.modalTransitionStyle = .crossDissolve
+
         target.present(tabBarVC, animated: true, completion: nil)
     }
     

@@ -50,7 +50,7 @@ class MenuViewController: UIViewController {
     }
     
     @IBAction func onClickDismissMenu(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
+        Utils.toTabBarVC(target: self)
     }
     @IBAction func closeMenu(_ sender: Any) {
         delegate?.hideMenu()
